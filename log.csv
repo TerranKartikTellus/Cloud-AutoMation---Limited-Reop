@@ -1,0 +1,10 @@
+log_id,log_type,timestamp,source_function,message
+91d91ce2-83c0-4346-8703-e61926980f5e,success,2024-08-27 09:42:34,create_gcp_vpc,VPC 'kartik212' created successfully.
+9bc385e6-453d-4f8a-a055-a00f75664ff1,success,2024-08-27 09:47:23,create_gcp_vpc,VPC 'kartik5' created successfully.
+a516ddba-945f-45b7-92a3-3efd79ec379b,success,2024-08-27 12:54:50,create_gcp_subnet,Subnet 'sub2' created in VPC kartik5 successfully.
+25f60c3c-5b4c-4cc5-ab7b-3c31a17b7bcf,success,2024-08-27 13:05:54,create_gcp_vpc,VPC 'vpc1' created successfully.
+5062dbce-ef29-4045-b847-4db9d3292493,success,2024-08-27 14:46:09,create_gcp_subnet,Subnet 'sub1' created in VPC vpc1 successfully.
+0ef04261-dc18-422a-aab6-61a2b98fdbe5,success,2024-08-27 16:15:05,create_gcp_vpc_using,VPC 'vpc1' created successfully.
+1ad174cb-bef8-4289-8109-31bcb23be327,error,2024-08-27 16:16:19,create_gcp_subnet,"<HttpError 400 when requesting https://compute.googleapis.com/compute/v1/projects/terrankartiktellus/regions/asia-east1/subnetworks?alt=json returned ""Invalid value for field 'resource.ipCidrRange': '10.0.0.1/10'. Must be a CIDR address range."". Details: ""[{'message': ""Invalid value for field 'resource.ipCidrRange': '10.0.0.1/10'. Must be a CIDR address range."", 'domain': 'global', 'reason': 'invalid'}]"">"
+e8d806d4-c12e-4ca1-add1-e98544dc81cc,success,2024-08-27 16:17:21,create_gcp_subnet,Subnet 'sub1' created in VPC vpc1 successfully.
+23c09a32-5cd8-4908-8797-9f220de7b94a,success,2024-08-27 17:05:18,create_gcp_subnet,Subnet 'sub2' created in VPC vpc1 successfully.
