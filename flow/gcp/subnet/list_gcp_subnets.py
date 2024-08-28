@@ -20,7 +20,7 @@ def list_gcp_subnets(
         
   subnet_request = compute_service.subnetworks().list(project=project_id, region=selected_region)
   subnet_response = subnet_request.execute()
-  # print(subnet_response)
+  # print(subnet_response) 
   if "items" in subnet_response:
     if is_print:
       rows = []
