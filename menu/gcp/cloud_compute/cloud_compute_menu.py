@@ -3,6 +3,7 @@ from helpers.menu.if_x_is_y_run_func import if_x_is_y_run_func
 from flow.gcp.instance.create_gcp_instance import create_gcp_instance
 from flow.gcp.instance.list_gcp_instances import list_gcp_instances
 from flow.gcp.instance.delete_gcp_instance import delete_gcp_instance
+from flow.gcp.instance.ssh import check_ssh
 
 def cloud_compute_menu():
     from menu.gcp.gcp_menu import gcp_menu
@@ -24,6 +25,8 @@ def cloud_compute_menu():
       },
       {
         "desc": "Delete Compute"
+      },{
+        "desc": "SSH Compute"
       }
     ]
     user_selection = load_main_menu(main_menu_items,where)
@@ -37,7 +40,10 @@ def cloud_compute_menu():
       if_x_is_y_run_func(user_selection,1,create_gcp_instance)
       if_x_is_y_run_func(user_selection,2,list_gcp_instances)
       # if_x_is_y_run_func(user_selection,3,azure_menu)
+      
+      
       if_x_is_y_run_func(user_selection,4,delete_gcp_instance)
+      if_x_is_y_run_func(user_selection,5,check_ssh)
     
     
     

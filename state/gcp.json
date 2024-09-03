@@ -1,4 +1,11 @@
 {
   "projectID": "terrankartiktellus",
-  "available_regions": ["europe-west3", "asia-east1", "us-east1", "europe-west1", "us-west1"]
+  "available_regions": [
+    "europe-west3",
+    "asia-east1",
+    "us-east1",
+    "europe-west1",
+    "us-west1"
+  ],
+  "private_key_file": "/Users/kartik2/Documents/Cloud Creds/AWS/02-sept-2024"
 }

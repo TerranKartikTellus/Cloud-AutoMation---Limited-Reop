@@ -27,7 +27,7 @@ def create_gcp_instance():
         # "items": [
         #     {
         #       "key": "ssh-keys",
-        #       "value": "kartik2:ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC5VZMbkJEEuIUuKG4260UYp+1bf2xEeXc59sF6MtDwRB5/k4uSrVmJkK0Unba+h5z6NrORxXzzwJSVKPtj9XzFm3lCnh73DD1xtK9j0CpK81ehpudn+CNPCnj9F3o9onAtTdshNdsxkCI0uhtX3p8RSLr49nvyu2YxT7sHLP/AY5+kqm2p7oeGey4LJduxBFjcx35jbj9N9QIHL4vjtfg5YLcNeM+VbKpKMQgaIPHF/Xakt/1ajPXssZ3xekol35JKs9J8PedeUSmbF4b13lLGZagwtevgeum/9dYreCXBMlHZ83kflFthYk13UQhtfb2xNjF6KrIgC7W2yAbsbJmP kartik2@kartik2-mac-0"
+        #       "value": "kartik2:ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC5VZMbhbhjbkJEEuIUuKG4260UYp+1bf2xEeXc59sF6MtDwRB5/k4uSrVmJkK0Unba+h5z6NrORxXzzwJSVKPtj9XzFm3lCnh73DD1xtK9j0CpK81ehpudn+CNPCnj9F3o9onAtTdshNdsxkCI0uhtX3p8RSLr49nvyu2YxT7sHLP/AY5+kqm2p7oeGey4LJduxBFjcx35jbj9N9QIHL4vjtfg5YLcNeM+VbKpKMQgaIPHF/Xakt/1ajPXssZ3xekol35JKs9J8PedeUSmbF4b13lLGZagwtevgeum/9dYreCXBMlHZ83kflFthYk13UQhtfb2xNjF6KrIgC7W2yAbsbJmP kartik2@kartik2-mac-0"
         #     }
         #   ]
         # },
