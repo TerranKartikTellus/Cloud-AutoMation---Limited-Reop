@@ -7,6 +7,7 @@ from helpers.input.text_input import text_input
 from flow.gcp.helpers.get_region_from_subnet_url import get_region_from_subnet_url
 from flow.gcp.zone.gcp_get_all_available_zone_in_region import gcp_get_all_available_zones_in_region
 from helpers.print.yellow import print_in_yellow
+from helpers.print.green import print_in_green
 
 
 def create_gcp_instance():
@@ -22,6 +23,14 @@ def create_gcp_instance():
     instance = {
         "name": instance_name,
         "machine_type": f"projects/{project_id}/zones/{zone}/machineTypes/e2-medium",
+        # "metadata": {
+        # "items": [
+        #     {
+        #       "key": "ssh-keys",
+        #       "value": "kartik2:ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC5VZMbkJEEuIUuKG4260UYp+1bf2xEeXc59sF6MtDwRB5/k4uSrVmJkK0Unba+h5z6NrORxXzzwJSVKPtj9XzFm3lCnh73DD1xtK9j0CpK81ehpudn+CNPCnj9F3o9onAtTdshNdsxkCI0uhtX3p8RSLr49nvyu2YxT7sHLP/AY5+kqm2p7oeGey4LJduxBFjcx35jbj9N9QIHL4vjtfg5YLcNeM+VbKpKMQgaIPHF/Xakt/1ajPXssZ3xekol35JKs9J8PedeUSmbF4b13lLGZagwtevgeum/9dYreCXBMlHZ83kflFthYk13UQhtfb2xNjF6KrIgC7W2yAbsbJmP kartik2@kartik2-mac-0"
+        #     }
+        #   ]
+        # },
         "zone": zone,
         "disks": [
             {
@@ -63,15 +72,16 @@ def create_gcp_instance():
     print_in_yellow("Fetching metadata")
 
     metadata = response.metadata.items
-    print(response)
+    # print(response)
     ssh_keys = [item.value for item in metadata if item.key == 'ssh-keys']
     print(ssh_keys)
     if ssh_keys:
         ssh_key = ssh_keys[0]
         username, _, key_filename = ssh_key.partition(' ')
 
-        print(f"Instance username: {username}")
-        print(f"Key filename: {key_filename}")
+        
+        print_in_green(f"Instance SSH username: {username}")
+        # print(f"Key filename: {key_filename}")
     else:
         print("No SSH keys found in instance metadata.")
 # ---------

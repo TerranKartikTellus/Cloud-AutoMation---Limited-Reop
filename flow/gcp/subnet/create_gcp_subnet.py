@@ -40,6 +40,12 @@ def create_gcp_subnet():
         }
         compute_service = build('compute', 'v1')
 
+
+
+
+
+
+
         try:
           # client = SubnetworksClient()
           
@@ -65,6 +71,14 @@ def create_gcp_subnet():
               log_id=l_id
           )
 
+        
+        
+        
+        
+        
+        
+        
+        
         
         
 def get_gcp_vpc_list(project_id):
